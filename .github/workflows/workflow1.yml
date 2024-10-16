@@ -4,6 +4,8 @@ jobs:
     Lint:
         runs-on: ubuntu-latest
         steps:
+            - name: Get code
+              uses: actions/checkout@v4
             - name: Install NodeJS
               uses: actions/setup-node@v4
               with:
